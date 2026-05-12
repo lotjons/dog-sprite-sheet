@@ -1,0 +1,8 @@
+svg path {
+  fill-opacity: 0;
+  animation: rita-upp 3s ease forwards, fill-in 1s ease 2.5s forwards;
+}
+
+@keyframes fill-in {
+  to { fill-opacity: 1; }
+}
