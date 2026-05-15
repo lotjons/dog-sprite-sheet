@@ -17,7 +17,7 @@
  .dog {
   width: 115px;
   height: 115px;
-  background-image: url("/assets/dog-sprite.png");
+  background-image: url("assets/dog-sprite.png");
   background-size: 512px 115px;
   background-position-x: 0;
   image-rendering: pixelated;
@@ -41,12 +41,9 @@
 <div class="dog"></div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
 <script>
   gsap.to(".dog", {
-
-backgroundPosition: "-384px 0px", // 128 * (4 - 1)
+  backgroundPosition: "-384px 0px", // 128 * (4 - 1)
   ease: "steps(3)",
   duration: 1.0,
   repeat: -1
