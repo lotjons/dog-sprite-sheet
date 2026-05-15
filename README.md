@@ -63,3 +63,48 @@ https://github.com/Medieinstitutet/fed25d-grafiska-verktyg-individuell-lotjons
 
 ![GIF:](assets/dog-sprite.gif)
 
+
+## Utmaningar & problemlösning
+
+Under arbetet stötte jag på ett gäng problem:
+
+### Problem: sprite-animation blinkade
+- **Orsak:** fel antal `steps()` i animationen
+- **Lösning:** matchade antal frames korrekt (`steps(3)` för 4 frames)
+
+---
+
+### Problem: element "wobblade"
+- **Orsak:** framesen var inte centrerade
+- **Lösning:** justerade sprite-sheet så varje frame hade samma mittpunkt
+
+---
+
+## Filformat
+
+### PNG
+Används för sprite-sheet (pixelgrafik)
+
+### SVG
+Används för vektorgrafik (skalbar och lätt att animera)
+
+---
+
+## 🚀 Lärdomar
+
+Genom denna uppgift har jag:
+
+- Absolut fått bättre förståelse för skillnaden mellan olika bildformat  
+- Lärt mig animera SVG med GSAP! Det var nice!
+- Lärt mig om och jobbat med sprite sheets och frame animation  
+- Tränat extra på felsökning i browser (DevTools, 404 errors)  
+
+---
+
+## ✅ Slutsats
+
+Uppgiften påminde mig om vikten av att:
+
+- Kunna hantera flera olika tekniker samtidigt  
+- Förstå hur frontend, grafik och struktur hänger ihop  
+- Kunna lösa problem utanför “ren kodning”  
