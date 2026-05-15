@@ -17,15 +17,10 @@
  .dog {
   width: 128px;
   height: 128px;
-
   background-image: url("/assets/dog-sprite.png");
-
-
-
-    /* 4 frames i rad */
-    background-size: 512px 128px;
-    background-position-x: 0;
-    image-rendering: pixelated;
+  background-size: 512px 128px;
+  background-position-x: 0;
+  image-rendering: pixelated;
 }
 
 </style>
@@ -59,12 +54,16 @@ backgroundPosition: "-384px 0px", // 128 * (4 - 1)
   
   });
 
-  gsap.to(".dog", {
-    duration: 0.9,
-    yoyo: true,
-    repeat: -1,
- 
-  });
+
+gsap.to("#dot", {
+  scale: 1.2,
+  transformOrigin: "30% 70%",
+  duration: 0.6,
+  yoyo: true,
+  repeat: -1,
+  ease: "sine.inOut"
+});
+
 
 </script>
 
